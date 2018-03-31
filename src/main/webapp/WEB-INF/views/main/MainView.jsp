@@ -2,10 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="kr">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,9 +54,8 @@
 <body>
 
     <div id="wrapper">
-        <div class="row"> 
         <!-- Navigation -->
-        <div class="col-sm-2" >
+
 	      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 	            <div class="navbar-header">
 	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -283,20 +280,20 @@
 	
 	            <div class="navbar-default sidebar" role="navigation">
 	                <div class="sidebar-nav navbar-collapse">
-	
-				           <c:import url="/main/inc/Leftmenu.do" />
+                      <c:import url="/main/inc/Leftmenu.do" />
 	                </div>
 	                <!-- /.sidebar-collapse -->
 	            </div>
 	            <!-- /.navbar-static-side -->
 	        </nav>
-        </div>
-        <div id="page-wrapper" class="col-sm-10" >
-         <div id="mainContents">
+
+        <div id="page-wrapper" class="row" >
+        <div  class="col-sm-12">
+          <div id="mainContents">
           </div>
+        </div>  
         </div>
         <!-- /#page-wrapper -->
-        </div>
     </div>
     <!-- /#wrapper -->
 

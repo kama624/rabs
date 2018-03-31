@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<div class="container">
-<div class="page-header">
-  <h5>공통코드관리</h5>
-</div>
- <div class="table-responsive">       
-  <table class="table table-hover table-bordered table-condensed table-striped">
+
+  <div class="page-header">
+    <h5>공통코드관리</h5>
+  </div>
+  <div class="table-responsive">       
+   <table class="table table-hover table-bordered table-condensed table-striped">
       <thead>
       <tr>
         <th>순번</th>
@@ -36,6 +36,6 @@
   </table>
   </div>
 
-  </div>
+
 </body>
 </html>
