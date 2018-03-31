@@ -5,28 +5,42 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
- 
+import org.springframework.web.bind.annotation.RequestMapping;
+import first.sample.service.SampleService;
+import rabs.com.sys.annotation.IncludeComInfo;
+
+
 @Controller
 public class SampleController {
-    Logger log = Logger.getLogger(this.getClass());
+	
+	private static final Logger logger = LoggerFactory.getLogger(SampleController.class);
      
-    @Resource(name="sampleService")
+    @Resource(name = "SampleService")
     private SampleService sampleService;
-     
+    
+    @IncludeComInfo(name="ê¸°ë³¸í™”ë©´",order = 302)
     @RequestMapping(value="/sample/openSampleBoardList.do")
-    public ModelAndView openSampleBoardList(Map<string,object> commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("/sample/boardList");
+    public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("main/home");
          
-        List<Map<String,Object>> list = sampleService.selectBoardList(commandMap);
-        mv.addObject("list", list);
+/*        @SuppressWarnings("unchecked")
+		List<Map<String,Object>> list = sampleService.selectBoardList(commandMap);
+        mv.addObject("list", list);*/
          
+        return mv;
+    }
+    
+    @IncludeComInfo(name="ë¶€íŠ¸ìŠ¤íŠ¸ëž©",order = 303)
+    @RequestMapping(value="/sample/bootstrapsample.do")
+    public ModelAndView openbootstrapsample(Map<String,Object> commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("sample/bootstrapsample");
+        logger.info("ë¶€íŠ¸ìŠ¤íŠ¸ëž©");
         return mv;
     }
 }
 
 
-ÃâÃ³: http://addio3305.tistory.com/72?category=772645 [ÈçÇÑ °³¹ßÀÚÀÇ °³¹ß ³ëÆ®]

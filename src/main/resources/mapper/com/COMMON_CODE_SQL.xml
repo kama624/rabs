@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="common">
+     
+    <select id="selectCodeMasterList" parameterType="hashmap" resultType="Map">
+        <![CDATA[
+            SELECT CODE_ID
+                   , CODE_ID_NM
+                   , CODE_ID_DC
+                   , USE_AT 
+              FROM COMTCCMMNCODE 
+             WHERE 1=1
+        ]]>
+		<if test="codeId != null  ">
+		     AND CODE_ID LIKE '%' || #codeId# || '%' 
+		</if>
+
+    </select>
+    
+    <select id="selectCodeDetailList" parameterType="hashmap" resultType="Map">
+	    <![CDATA[
+	        select * from COMTCCMMNDETAILCODE
+	    ]]>
+   </select>
+    
+     
+    <!--          <choose>
+		    <when test="codeId == null">
+		        NULL일경우 조건문
+		    </when>
+		    <otherwise>
+		        NULL이 아닐경우 조건문
+		    </otherwise>
+		</choose>
+      -->
+</mapper>
+
+

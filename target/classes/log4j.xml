@@ -15,6 +15,18 @@
 		<level value="info" />
 	</logger>
 	
+	
+    <logger name="rabs.com">
+		<level value="debug" />
+	</logger>
+	
+	<logger name="first">
+		<level value="info" />
+	</logger>
+	
+	<logger name="common">
+		<level value="info" />
+	</logger>
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />

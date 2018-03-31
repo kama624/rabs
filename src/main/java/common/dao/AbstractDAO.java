@@ -6,7 +6,9 @@ import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository("abstractDAO")
 public class AbstractDAO {
     protected Log log = LogFactory.getLog(AbstractDAO.class);
      
