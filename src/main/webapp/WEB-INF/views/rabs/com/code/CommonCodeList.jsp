@@ -6,7 +6,7 @@
 <head>
 <script type="text/javascript">
 $(function(){
-	$('#dataTables').DataTable({
+	$('#dataTables-comcode').DataTable({
 	   // responsive: true
 	    info: false
 	    ,searching: true
@@ -36,7 +36,7 @@ $(function(){
                         </div> -->
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-comcode">
                                 <thead>
                                     <tr>
 								        <th>순번</th>

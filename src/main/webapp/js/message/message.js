@@ -49,12 +49,10 @@ var MSG_CONFIRM_SEARCH_AGAIN = "(재)조회 하시겠습니까?"
 var MSG_CONFIRM_MAIL = "메일을 보내시겠습니까?";
 var MSG_ALERT_MAIL_OK = "메일발송을 완료하였습니다.";
 
-var MSG_ALERT_SAWON_NOTHING ="조회 가능한 사원이 없습니다.";
 var MSG_ALERT_SEARCH_AGAIN_LATER ="잠시 후 조회버튼을 눌러주세요";
 var MSG_ALERT_INSERT_LATER ="조회 하신 후 입력하실 수 있습니다.";
 var MSG_ALERT_SEARCH_SAWON_NOTHING ="검색된 사원이 없습니다.";
 var MSG_ALERT_SEARCH_ORG_NOTHING ="검색된 조직이 없습니다.";
-var MSG_ALERT_INVALID_DAYS ="연간 사용한도 일수를 초과하였으므로 신청 불가능합니다.";
 
 var MSG_ALERT_NOT_SQLFORMAT="유효한 SQL 문장이 아닙니다.";
 var MSG_ALERT_FILE_NOT_EXIST="파일이 존재하지 않습니다.";
