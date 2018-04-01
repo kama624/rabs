@@ -33,11 +33,4 @@
   <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
  </aop:config>
 
-
- <!-- dao 스캔 -->
- <bean class= "org.mybatis.spring.mapper.MapperScannerConfigurer">
-  <property name="basePackage" value="com.test.web.**.dao" />
- </bean>
-
-
 </beans> 
