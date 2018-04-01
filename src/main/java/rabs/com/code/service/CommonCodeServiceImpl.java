@@ -16,6 +16,7 @@ public class CommonCodeServiceImpl implements CommonCodeService {
 	@Override
 	public int insertCodeMaster(Map<String, String> paramMap) {
 		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -58,10 +59,7 @@ public class CommonCodeServiceImpl implements CommonCodeService {
 	@Override
 	public List<Map<String, Object>> selectCodeMasterList(Map<String, Object> paramMap) {
 		// TODO Auto-generated method stub
-		List list = dao.selectList("common.selectCodeMasterList", paramMap);
-		for (int i = 0  ; i< list.size() ; i++){
-			System.out.println(" == " + list.get(i));
-		}
+		List<Map<String, Object>> list = dao.selectList("common.selectCodeMasterList", paramMap);
 		return list;
 	}
 }

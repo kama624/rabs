@@ -14,6 +14,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="${pageContext.request.contextPath}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- DataTables CSS -->
+    <link href="${pageContext.request.contextPath}/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="${pageContext.request.contextPath}/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    
     <!-- MetisMenu CSS -->
     <link href="${pageContext.request.contextPath}/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
@@ -35,12 +41,16 @@
     <!-- jQuery -->
     <script src="${pageContext.request.contextPath}/js/jquery/jquery.3.3.1.js"></script>
     
-    
     <!-- Bootstrap Core JavaScript -->
     <script src="${pageContext.request.contextPath}/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="${pageContext.request.contextPath}/vendor/metisMenu/metisMenu.min.js"></script>
+    
+      <!-- DataTables JavaScript -->
+    <script src="${pageContext.request.contextPath}/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="${pageContext.request.contextPath}/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Morris Charts JavaScript -->
     <script src="${pageContext.request.contextPath}/vendor/raphael/raphael.min.js"></script>
@@ -55,8 +65,7 @@
 
     <div id="wrapper">
         <!-- Navigation -->
-
-	      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 	            <div class="navbar-header">
 	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 	                    <span class="sr-only">Toggle navigation</span>
@@ -287,16 +296,17 @@
 	            <!-- /.navbar-static-side -->
 	        </nav>
 
-        <div id="page-wrapper" class="row" >
-        <div  class="col-sm-12">
-          <div id="mainContents">
-          </div>
-        </div>  
+        <div id="page-wrapper" >
+          <div class="row" >
+	        <div  class="col-sm-12">
+	          <div id="mainContents">
+	          </div>
+	        </div>  
+	      </div>
         </div>
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
 </body>
 
 </html>
