@@ -40,6 +40,16 @@ public class CommonCodeController {
         return mv;
     }
     
+    
+    @RequestMapping(value="/a.do")
+    public ModelAndView testMethod(Map<String,Object> commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("rabs/com/code/CommonCodeList");
+        
+        logger.info(" this is logg : {} " + this.getClass().getName() );
+         
+        return mv;
+    }
+    
 }
 
 

@@ -34,9 +34,10 @@ $(function(){
         if(userId == '' || password == '' ){
           alert('정보 입력 제대로 좀 ');	
         }else{
-        	alert('x');
-        	alert($('form').attr('action') + ' dddd ');
-	        $('form').submit();
+	        $('form').submit(function(event){
+	          event.preventDefault();
+	          console.log( $( this ).serialize() );
+	        });
         }
 	}});
 });
